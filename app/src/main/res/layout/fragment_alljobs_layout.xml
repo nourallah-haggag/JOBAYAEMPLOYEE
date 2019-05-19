@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:textToggleCenter="part time"
+        custom:textToggleLeft="All"
+        custom:textToggleRight="ushering"
+        custom:activeTextColor="@android:color/white"
+        custom:inactiveTextColor="@android:color/black"
+        custom:activeBgColor="@color/black"
+        custom:toggleWidth="100dp"
+        custom:separatorColor="@color/gray_very_light"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/category_toggle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/showing_results_for_txt"/>
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/category_toggle"/>
+
+    <ImageView
+        android:id="@+id/error_image_all_jobs"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        custom:srcCompat="@drawable/xmark" />
+
+    <TextView
+        android:id="@+id/error_text_all_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/error_image_all_jobs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/error_button_all_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/error_text_all_jobs"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:drawablePadding="5sp"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_refresh_white_24dp"
+        android:text="refresh"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+</RelativeLayout>

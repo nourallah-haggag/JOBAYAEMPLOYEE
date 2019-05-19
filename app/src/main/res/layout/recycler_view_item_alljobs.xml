@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_item_alljobs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+       <!-- <ImageView
+            android:id="@+id/company_image"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/enterprise" />-->
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Job Title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/job_title"
+            android:layout_marginLeft="10dp"
+
+            />
+          <!-- android:layout_toEndOf="@id/company_image" -->
+
+
+        <ImageView
+            android:id="@+id/label_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/job_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/tags" />
+           <!-- android:layout_toEndOf="@id/company_image" -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_title"
+            android:layout_marginTop="10dp"
+            android:id="@+id/job_cat"
+            android:text="Category "
+            android:layout_toEndOf="@id/label_icon"
+            android:layout_marginLeft="10dp"
+
+            />
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/job_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/job_cat"
+            app:srcCompat="@drawable/time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_title"
+            android:layout_marginTop="10dp"
+            android:id="@+id/job_duration"
+            android:text="duration"
+            android:layout_toEndOf="@id/time_icon"
+            android:layout_marginLeft="10dp"
+
+            />
+
+       <android.support.design.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="10dp"
+           android:id="@+id/apply_button"
+            android:backgroundTint="@color/dark_blue"
+            android:text="APPLY"
+            android:textColor="@color/white"/>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APPLY"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/job_info"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"/> -->
+
+
+
+    </RelativeLayout>
+</android.support.design.card.MaterialCardView>

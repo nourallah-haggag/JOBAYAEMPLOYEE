@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JOBAYA-EMPLOYEE</string>
+    <string name="login_end_point">https://jobayaback.herokuapp.com/login</string>
+</resources>

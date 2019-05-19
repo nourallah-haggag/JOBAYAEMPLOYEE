@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/allJobsTab" android:title="All Jobs" android:icon="@drawable/alljobs"></item>
+    <item android:id="@+id/appliedJobsTab" android:title="Applied Jobs" android:icon="@drawable/applied"></item>
+    <item android:id="@+id/matchedJobsTab" android:title="Matched Jobs" android:icon="@drawable/match"></item>
+    <item android:id="@+id/userTab" android:title="My Profile" android:icon="@drawable/user"></item>
+
+
+</menu>
